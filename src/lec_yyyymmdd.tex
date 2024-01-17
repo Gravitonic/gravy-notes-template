@@ -6,11 +6,11 @@
 
 \KOMAoptions{titlepage=false}
 
+\ifSubfilesClassLoaded{\renewcommand*\thesection{\arabic{section}}}{}
+
 \begin{document}
 
-\makeatletter
-\ifSubfilesClassLoaded{\maketitle}{\section{Lecture Notes YYYY/MM/DD}}
-\makeatother
+\ifSubfilesClassLoaded{\maketitle}{}
 
 Hello from a sample lecture file.
 

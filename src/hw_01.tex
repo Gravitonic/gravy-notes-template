@@ -6,11 +6,11 @@
 
 \KOMAoptions{titlepage=false}
 
+\ifSubfilesClassLoaded{\renewcommand*\thesection{\arabic{section}}}{}
+
 \begin{document}
 
-\makeatletter
 \ifSubfilesClassLoaded{\maketitle}{\section{Homework 1}}
-\makeatother
 
 Hello from a sample homework file.
 
